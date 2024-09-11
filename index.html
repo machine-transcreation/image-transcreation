@@ -417,14 +417,16 @@
   }
 
   .carousel-item {
-    display: none; /* Hide all items initially */
-    width: 100%; /* Take full width of container */
+    display: flex; /* Use flexbox for better layout */
+    justify-content: center; /* Center the image within the container */
+    align-items: center;
+    opacity: 0; /* Initially hide all images */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
   }
 
   .carousel-item.active {
-    display: block; /* Only display the active image */
+    opacity: 1; /* Show the active image */
   }
-
   .carousel img {
     width: 100%;
     height: 300px; /* Standardized height for all images */
