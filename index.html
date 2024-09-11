@@ -436,7 +436,6 @@
   }
 </style>
 
-
 <script>
   // Function to initialize the carousels
   function initializeCarousel(carouselId) {
@@ -455,11 +454,23 @@
 
     showItem(currentIndex);
 
-    // Automatically scroll between images every few seconds (optional)
-    setInterval(() => {
+    // Add navigation buttons for manual control
+    const prevButton = document.createElement('button');
+    prevButton.textContent = 'Previous';
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      showItem(currentIndex);
+    });
+
+    const nextButton = document.createElement('button');
+    nextButton.textContent = 'Next';
+    nextButton.addEventListener('click', () => {
       currentIndex = (currentIndex + 1) % items.length;
       showItem(currentIndex);
-    }, 3000); // Change the time as needed (3000ms = 3 seconds)
+    });
+
+    carousel.appendChild(prevButton);
+    carousel.appendChild(nextButton);
   }
 
   // Initialize each country carousel
