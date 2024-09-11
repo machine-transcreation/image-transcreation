@@ -216,7 +216,7 @@
 
     <!-- Carousel for Brazil -->
     <div class="column is-one-quarter">
-        <div id="carousel-brazil" class="carousel">
+        <div id="carousel-brazil" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/brazil/brazil_celebrations_congada.jpg" alt="Brazil Celebrations Congada">
             <p class="has-text-centered">Celebrations: Congada</p>
@@ -245,7 +245,7 @@
 
     <!-- Carousel for India -->
     <div class="column is-one-quarter">
-        <div id="carousel-india" class="carousel">
+        <div id="carousel-india" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/india/india_agriculture_rice-cultivation.jpg" alt="India Agriculture Rice Cultivation">
             <p class="has-text-centered">Agriculture: Rice Cultivation</p>
@@ -274,7 +274,7 @@
 
     <!-- Japan -->
     <div class="column is-one-quarter">
-        <div id="carousel-japan" class="carousel">
+        <div id="carousel-japan" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/japan/japan_bird_kounotori.jpg" alt="Japan Bird Kounotori">
             <p class="has-text-centered">Bird: Kounotori</p>
@@ -301,7 +301,7 @@
 
     <!-- Nigeria -->
     <div class="column is-one-quarter">
-        <div id="carousel-nigeria" class="carousel">
+        <div id="carousel-nigeria" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/nigeria/nigeria_agriculture_fish-farming.jpg" alt="Nigeria Agriculture Fish Farming">
             <p class="has-text-centered">Agriculture: Fish Farming</p>
@@ -328,7 +328,7 @@
 
     <!-- Portugal -->
     <div class="column is-one-quarter">
-        <div id="carousel-portugal" class="carousel">
+        <div id="carousel-portugal" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/portugal/portugal_food_bacalhau-à-brás.jpg" alt="Portugal Food Bacalhau à Brás">
             <p class="has-text-centered">Food: Bacalhau à Brás</p>
@@ -355,7 +355,7 @@
 
     <!-- Turkey -->
     <div class="column is-one-quarter">
-        <div id="carousel-turkey" class="carousel">
+        <div id="carousel-turkey" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/turkey/turkey_bird_mallard.jpg" alt="Turkey Bird Mallard">
             <p class="has-text-centered">Bird: Mallard</p>
@@ -382,7 +382,7 @@
 
     <!-- United States -->
     <div class="column is-one-quarter">
-        <div id="carousel-unitedstates" class="carousel">
+        <div id="carousel-unitedstates" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/united-states/united_states_celebrations_halloween.jpg" alt="United States Celebrations Halloween">
             <p class="has-text-centered">Celebrations: Halloween</p>
@@ -410,50 +410,63 @@
   </div>
 </section>
 
+<!-- CSS to standardize image dimensions and show one image at a time -->
 <style>
+  .carousel {
+    overflow: hidden; /* Hide other images */
+    position: relative;
+  }
+
+  .carousel-item {
+    width: 100%;
+    display: none; /* Hide all items initially */
+  }
+
+  .carousel-item.active {
+    display: block; /* Show only the active item */
+  }
+
   .carousel img {
     width: 100%;
-    height: 200px; /* You can adjust this height to fit your design */
-    object-fit: cover; /* Ensures that the image fills the area while maintaining aspect ratio */
+    height: 300px; /* Standard height */
+    object-fit: cover; /* Ensures images cover the container */
   }
 </style>
 
 <script>
-  // Initialize carousel for each country
-  bulmaCarousel.attach('#carousel-brazil', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    infinite: true
-  });
-  bulmaCarousel.attach('#carousel-india', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    infinite: true
-  });
-  bulmaCarousel.attach('#carousel-japan', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    infinite: true
-  });
-  bulmaCarousel.attach('#carousel-nigeria', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    infinite: true
-  });
-  bulmaCarousel.attach('#carousel-portugal', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    infinite: true
-  });
-  bulmaCarousel.attach('#carousel-unitedstates', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    infinite: true
-  });
-  bulmaCarousel.attach('#carousel-turkey', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    infinite: true
+  // Function to initialize the carousels
+  function initializeCarousel(carouselId) {
+    const carousel = document.querySelector(carouselId);
+    const items = carousel.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    function showItem(index) {
+      items.forEach((item, i) => {
+        item.classList.remove('active');
+        if (i === index) {
+          item.classList.add('active');
+        }
+      });
+    }
+
+    showItem(currentIndex);
+
+    // Automatically scroll between images every few seconds (optional)
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % items.length;
+      showItem(currentIndex);
+    }, 3000); // Change the time as needed (3000ms = 3 seconds)
+  }
+
+  // Initialize each country carousel
+  document.addEventListener('DOMContentLoaded', function () {
+    initializeCarousel('#carousel-brazil');
+    initializeCarousel('#carousel-india');
+    initializeCarousel('#carousel-japan');
+    initializeCarousel('#carousel-nigeria');
+    initializeCarousel('#carousel-portugal');
+    initializeCarousel('#carousel-turkey');
+    initializeCarousel('#carousel-unitedstates');
   });
 </script>
 
