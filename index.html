@@ -212,9 +212,10 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Dataset (Concept)</h2>
 
+    <div class="columns is-multiline is-centered"></div>
+
     <!-- Carousel for Brazil -->
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="column is-one-quarter">
         <div id="carousel-brazil" class="carousel">
           <div class="item">
             <img src="./static/images/concept/brazil/brazil_celebrations_congada.jpg" alt="Brazil Celebrations Congada">
@@ -239,13 +240,11 @@
         </div>
         <p class="has-text-centered">Brazil</p>
       </div>
-    </div>
 
     <!-- Repeat for each country -->
 
     <!-- Carousel for India -->
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="column is-one-quarter">
         <div id="carousel-india" class="carousel">
           <div class="item">
             <img src="./static/images/concept/india/india_agriculture_rice-cultivation.jpg" alt="India Agriculture Rice Cultivation">
@@ -270,13 +269,11 @@
         </div>
         <p class="has-text-centered">India</p>
       </div>
-    </div>
 
     <!-- Continue for the remaining countries -->
 
     <!-- Japan -->
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="column is-one-quarter">
         <div id="carousel-japan" class="carousel">
           <div class="item">
             <img src="./static/images/concept/japan/japan_bird_kounotori.jpg" alt="Japan Bird Kounotori">
@@ -301,11 +298,9 @@
         </div>
         <p class="has-text-centered">Japan</p>
       </div>
-    </div>
 
     <!-- Nigeria -->
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="column is-one-quarter">
         <div id="carousel-nigeria" class="carousel">
           <div class="item">
             <img src="./static/images/concept/nigeria/nigeria_agriculture_fish-farming.jpg" alt="Nigeria Agriculture Fish Farming">
@@ -330,11 +325,9 @@
         </div>
         <p class="has-text-centered">Nigeria</p>
       </div>
-    </div>
 
     <!-- Portugal -->
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="column is-one-quarter">
         <div id="carousel-portugal" class="carousel">
           <div class="item">
             <img src="./static/images/concept/portugal/portugal_food_bacalhau-à-brás.jpg" alt="Portugal Food Bacalhau à Brás">
@@ -359,11 +352,9 @@
         </div>
         <p class="has-text-centered">Portugal</p>
       </div>
-    </div>
 
     <!-- Turkey -->
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="column is-one-quarter">
         <div id="carousel-turkey" class="carousel">
           <div class="item">
             <img src="./static/images/concept/turkey/turkey_bird_mallard.jpg" alt="Turkey Bird Mallard">
@@ -388,11 +379,9 @@
         </div>
         <p class="has-text-centered">Turkey</p>
       </div>
-    </div>
 
     <!-- United States -->
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="column is-one-quarter">
         <div id="carousel-unitedstates" class="carousel">
           <div class="item">
             <img src="./static/images/concept/united-states/united_states_celebrations_halloween.jpg" alt="United States Celebrations Halloween">
@@ -418,10 +407,16 @@
         <p class="has-text-centered">United States</p>
       </div>
     </div>
-
-
   </div>
 </section>
+
+<style>
+  .carousel img {
+    width: 100%;
+    height: 200px; /* You can adjust this height to fit your design */
+    object-fit: cover; /* Ensures that the image fills the area while maintaining aspect ratio */
+  }
+</style>
 
 <script>
   // Initialize carousel for each country
