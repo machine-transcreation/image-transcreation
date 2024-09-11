@@ -410,28 +410,32 @@
   </div>
 </section>
 
-<!-- CSS to standardize image dimensions and show one image at a time -->
 <style>
   .carousel {
-    overflow: hidden; /* Hide other images */
+    overflow: hidden; /* Ensure other images are hidden */
     position: relative;
   }
 
   .carousel-item {
-    width: 100%;
     display: none; /* Hide all items initially */
+    width: 100%; /* Take full width of container */
   }
 
   .carousel-item.active {
-    display: block; /* Show only the active item */
+    display: block; /* Only display the active image */
   }
 
   .carousel img {
     width: 100%;
-    height: 300px; /* Standard height */
-    object-fit: cover; /* Ensures images cover the container */
+    height: 300px; /* Standardized height for all images */
+    object-fit: cover; /* Ensure image fits the container without distortion */
+  }
+
+  .columns {
+    margin-top: 20px;
   }
 </style>
+
 
 <script>
   // Function to initialize the carousels
