@@ -417,15 +417,19 @@
   }
 
   .carousel-item {
-    display: flex; /* Use flexbox for better layout */
-    justify-content: center; /* Center the image within the container */
-    align-items: center;
-    opacity: 0; /* Initially hide all images */
-    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+    position: absolute; /* Position the items absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 0; /* Default z-index */
   }
 
   .carousel-item.active {
-    opacity: 1; /* Show the active image */
+    opacity: 1;
+    z-index: 1; /* Set the active item to have a higher z-index */
   }
   .carousel img {
     width: 100%;
