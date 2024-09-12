@@ -412,33 +412,50 @@
 
 <style>
   .carousel {
-    overflow: hidden; /* Ensure other images are hidden */
-    position: relative;
+    overflow: hidden; 
+    display: flex;
+    position: relative; /* For button positioning */
   }
 
   .carousel-item {
-    position: absolute; /* Position the items absolutely */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    flex-shrink: 0; 
+    width: 100%; 
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    z-index: 0; /* Default z-index */
   }
 
   .carousel-item.active {
     opacity: 1;
-    z-index: 1; /* Set the active item to have a higher z-index */
   }
+
   .carousel img {
     width: 100%;
-    height: 300px; /* Standardized height for all images */
-    object-fit: cover; /* Ensure image fits the container without distortion */
+    height: 300px; 
+    object-fit: cover; 
   }
 
   .columns {
     margin-top: 20px;
+  }
+
+  /* Optional: Style for navigation buttons */
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .carousel button:first-child { /* Previous button */
+    left: 10px;
+}
+
+  .carousel button:last-child { /* Next button */
+    right: 10px;
   }
 </style>
 
