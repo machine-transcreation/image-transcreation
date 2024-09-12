@@ -27,7 +27,7 @@
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <!-- <link rel="stylesheet" href="./static/css/bulma-carousel.min.css"> -->
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
@@ -37,7 +37,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+  <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
@@ -216,7 +216,7 @@
 
     <!-- Carousel for Brazil -->
     <div class="column is-one-quarter">
-        <div id="carousel-brazil" class="carousel">
+        <div id="carousel-brazil" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/brazil/brazil_celebrations_congada.jpg" alt="Brazil Celebrations Congada">
             <p class="has-text-centered">Celebrations: Congada</p>
@@ -245,7 +245,7 @@
 
     <!-- Carousel for India -->
     <div class="column is-one-quarter">
-        <div id="carousel-india" class="carousel">
+        <div id="carousel-india" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/india/india_agriculture_rice-cultivation.jpg" alt="India Agriculture Rice Cultivation">
             <p class="has-text-centered">Agriculture: Rice Cultivation</p>
@@ -274,7 +274,7 @@
 
     <!-- Japan -->
     <div class="column is-one-quarter">
-        <div id="carousel-japan" class="carousel">
+        <div id="carousel-japan" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/japan/japan_bird_kounotori.jpg" alt="Japan Bird Kounotori">
             <p class="has-text-centered">Bird: Kounotori</p>
@@ -301,7 +301,7 @@
 
     <!-- Nigeria -->
     <div class="column is-one-quarter">
-        <div id="carousel-nigeria" class="carousel">
+        <div id="carousel-nigeria" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/nigeria/nigeria_agriculture_fish-farming.jpg" alt="Nigeria Agriculture Fish Farming">
             <p class="has-text-centered">Agriculture: Fish Farming</p>
@@ -328,7 +328,7 @@
 
     <!-- Portugal -->
     <div class="column is-one-quarter">
-        <div id="carousel-portugal" class="carousel">
+        <div id="carousel-portugal" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/portugal/portugal_food_bacalhau-à-brás.jpg" alt="Portugal Food Bacalhau à Brás">
             <p class="has-text-centered">Food: Bacalhau à Brás</p>
@@ -355,7 +355,7 @@
 
     <!-- Turkey -->
     <div class="column is-one-quarter">
-        <div id="carousel-turkey" class="carousel">
+        <div id="carousel-turkey" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/turkey/turkey_bird_mallard.jpg" alt="Turkey Bird Mallard">
             <p class="has-text-centered">Bird: Mallard</p>
@@ -382,7 +382,7 @@
 
     <!-- United States -->
     <div class="column is-one-quarter">
-        <div id="carousel-unitedstates" class="carousel">
+        <div id="carousel-unitedstates" class="carousel is-horizontal">
           <div class="item">
             <img src="./static/images/concept/united-states/united_states_celebrations_halloween.jpg" alt="United States Celebrations Halloween">
             <p class="has-text-centered">Celebrations: Halloween</p>
@@ -412,50 +412,33 @@
 
 <style>
   .carousel {
-    overflow: hidden; 
-    display: flex;
-    position: relative; /* For button positioning */
+    overflow: hidden; /* Ensure other images are hidden */
+    position: relative;
   }
 
   .carousel-item {
-    flex-shrink: 0; 
-    width: 100%; 
+    position: absolute; /* Position the items absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    z-index: 0; /* Default z-index */
   }
 
   .carousel-item.active {
     opacity: 1;
+    z-index: 1; /* Set the active item to have a higher z-index */
   }
-
   .carousel img {
     width: 100%;
-    height: 300px; 
-    object-fit: cover; 
+    height: 300px; /* Standardized height for all images */
+    object-fit: cover; /* Ensure image fits the container without distortion */
   }
 
   .columns {
     margin-top: 20px;
-  }
-
-  /* Optional: Style for navigation buttons */
-  .carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .carousel button:first-child { /* Previous button */
-    left: 10px;
-}
-
-  .carousel button:last-child { /* Next button */
-    right: 10px;
   }
 </style>
 
