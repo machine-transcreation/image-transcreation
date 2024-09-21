@@ -297,7 +297,22 @@
     </div>
 
     <div class="hero-body"></div>
-      <img src="./static/images/dataset.png" alt="Applications of Image Transcreation" height="100%">
+      <img src="./static/images/dataset.png" alt="Dataset overview" height="100%">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="Pipelines"></section>
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Pipelines</h2>
+    <div class="content has-text-justified">
+      <p>
+         We introduce three pipelines comprising state-of-the-art vision and language models to solve this task. The first pipeline uses an end-to-end image editing model, specifically, <a href="https://www.timothybrooks.com/instruct-pix2pix">InstructPix2Pix</a>, with the prompt, "Make this image culturally relevant to <em>X</em>", where <em>X</em> is one of the 7 countries above. The second pipeline captions the image using <a href="https://huggingface.co/Salesforce/instructblip-flan-t5-xxl">InstructBLIP</a>, edits the caption using GPT-3.5, and edits the image using <a href="https://pnp-diffusion.github.io/">Plug-and-Play</a> with GPT's output as the edit instruction. The third pipeline similarly captions the image and edits the caption, but retrieves a natural image from <a href="https://huggingface.co/datasets/mlfoundations/datacomp_1b">Datacomp-1b</a>, with GPT's output as the search query. An overview of all methods is given below:
+      </p>
+    </div>
+
+    <div class="hero-body"></div>
+      <img src="./static/images/pipelines.png" alt="Pipelines" height="100%">
     </div>
   </div>
 </section>
