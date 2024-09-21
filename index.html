@@ -32,14 +32,17 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/star.svg">
+  
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <style>
     .carousel {
       overflow: hidden; /* Ensure other images are hidden */
@@ -109,9 +112,15 @@
       carousel.appendChild(nextButton);
     }
 
-    // Initialize each country carousel
     document.addEventListener('DOMContentLoaded', function () {
-      initializeCarousel('#carousel-brazil');
+      new Swiper('#carousel-brazil', { 
+          // Optional configuration parameters
+          loop: true, // Loop slides
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+      });
       initializeCarousel('#carousel-india');
       initializeCarousel('#carousel-japan');
       initializeCarousel('#carousel-nigeria');
@@ -122,6 +131,8 @@
   </script> 
 </head>
 <body>
+
+  <!-- initializeCarousel('#carousel-brazil'); -->
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -294,23 +305,37 @@
 
     <div class="columns is-multiline is-centered">
     
-      <div id="carousel-brazil" class="carousel is-horizontal">
-        <div class="carousel-item"> <img src="./static/images/concept/brazil/brazil_celebrations_congada.jpg" alt="Brazil Celebrations Congada">
-          <p class="has-text-centered">Celebrations: Congada</p>
+      <div class="swiper" id="carousel-brazil">
+        <div class="swiper-wrapper"> 
+            <div class="swiper-slide">
+                <img src="./static/images/concept/brazil/brazil_celebrations_congada.jpg" alt="Brazil Celebrations Congada">
+                <p class="has-text-centered">Celebrations: Congada</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="./static/images/concept/brazil/brazil_food_feijoada.jpg" alt="Brazil Food Feijoada">
+                <p class="has-text-centered">Food: Feijoada</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="./static/images/concept/brazil/brazil_food_feijoada.jpg" alt="Brazil Food Feijoada">
+                <p class="has-text-centered">Food: Feijoada</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="./static/images/concept/brazil/brazil_food_feijoada.jpg" alt="Brazil Food Feijoada">
+                <p class="has-text-centered">Food: Feijoada</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="./static/images/concept/brazil/brazil_food_feijoada.jpg" alt="Brazil Food Feijoada">
+                <p class="has-text-centered">Food: Feijoada</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="./static/images/concept/brazil/brazil_food_feijoada.jpg" alt="Brazil Food Feijoada">
+                <p class="has-text-centered">Food: Feijoada</p>
+            </div>
         </div>
-        <div class="carousel-item"> <img src="./static/images/concept/brazil/brazil_food_feijoada.jpg" alt="Brazil Food Feijoada">
-          <p class="has-text-centered">Food: Feijoada</p>
-        </div>
-        <div class="carousel-item"> <img src="./static/images/concept/brazil/brazil_houses_sobrado.jpg" alt="Brazil Houses Sobrado">
-          <p class="has-text-centered">Houses: Sobrado</p>
-        </div>
-        <div class="carousel-item"> <img src="./static/images/concept/brazil/brazil_music_forró.jpg" alt="Brazil Music Forró">
-          <p class="has-text-centered">Music: Forró</p>
-        </div>
-        <div class="carousel-item"> <img src="./static/images/concept/brazil/brazil_sport_capoeira.jpg" alt="Brazil Sport Capoeira">
-          <p class="has-text-centered">Sport: Capoeira</p>
-        </div>
-      </div>
+    
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 
     <!-- Carousel for Brazil -->
     <!-- <div class="column is-one-quarter">
