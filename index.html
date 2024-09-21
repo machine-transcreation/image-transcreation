@@ -45,6 +45,17 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!--  Remove the entire <style> and <script> block related to the old carousel -->
 
+  <style>
+    .carousel-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 300px; /* Adjust this value for your desired maximum height */
+      margin: 0 auto; 
+      object-fit: contain;
+    }
+  </style>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     // Initialize each carousel using Swiper JS
@@ -286,23 +297,28 @@
         <div class="swiper" id="carousel-brazil">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./static/images/concept/brazil/brazil_celebrations_congada.jpg" alt="Brazil Celebrations Congada">
+              <img src="./static/images/concept/brazil/brazil_celebrations_congada.jpg" 
+                   alt="Brazil Celebrations Congada" class="carousel-image">
               <p class="has-text-centered">Celebrations: Congada</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/brazil/brazil_food_feijoada.jpg" alt="Brazil Food Feijoada">
+              <img src="./static/images/concept/brazil/brazil_food_feijoada.jpg" 
+                   alt="Brazil Food Feijoada" class="carousel-image">
               <p class="has-text-centered">Food: Feijoada</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/brazil/brazil_houses_sobrado.jpg" alt="Brazil Houses Sobrado">
+              <img src="./static/images/concept/brazil/brazil_houses_sobrado.jpg" 
+                   alt="Brazil Houses Sobrado" class="carousel-image">
               <p class="has-text-centered">Houses: Sobrado</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/brazil/brazil_music_forró.jpg" alt="Brazil Music Forró">
+              <img src="./static/images/concept/brazil/brazil_music_forró.jpg" 
+                   alt="Brazil Music Forró" class="carousel-image">
               <p class="has-text-centered">Music: Forró</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/brazil/brazil_sport_capoeira.jpg" alt="Brazil Sport Capoeira">
+              <img src="./static/images/concept/brazil/brazil_sport_capoeira.jpg" 
+                   alt="Brazil Sport Capoeira" class="carousel-image">
               <p class="has-text-centered">Sport: Capoeira</p>
             </div>
           </div>
@@ -311,28 +327,33 @@
         </div>
         <p class="has-text-centered">Brazil</p>
       </div>
-      
+
       <div class="column is-one-quarter-desktop is-half-tablet">
         <div class="swiper" id="carousel-india">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./static/images/concept/india/india_agriculture_rice-cultivation.jpg" alt="India Agriculture Rice Cultivation">
+              <img src="./static/images/concept/india/india_agriculture_rice-cultivation.jpg" 
+                   alt="India Agriculture Rice Cultivation" class="carousel-image">
               <p class="has-text-centered">Agriculture: Rice Cultivation</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/india/india_clothing_Sari.jpg" alt="India Clothing Sari">
+              <img src="./static/images/concept/india/india_clothing_Sari.jpg" 
+                   alt="India Clothing Sari" class="carousel-image">
               <p class="has-text-centered">Clothing: Sari</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/india/india_music_harmonium.jpg" alt="India Music Harmonium">
+              <img src="./static/images/concept/india/india_music_harmonium.jpg" 
+                   alt="India Music Harmonium" class="carousel-image">
               <p class="has-text-centered">Music: Harmonium</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/india/india_sport_badminton.jpg" alt="India Sport Badminton">
+              <img src="./static/images/concept/india/india_sport_badminton.jpg" 
+                   alt="India Sport Badminton" class="carousel-image">
               <p class="has-text-centered">Sport: Badminton</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/india/india_visual-arts_Madhubani-art.jpg" alt="India Visual Arts Madhubani Art">
+              <img src="./static/images/concept/india/india_visual-arts_Madhubani-art.jpg" 
+                   alt="India Visual Arts Madhubani Art" class="carousel-image">
               <p class="has-text-centered">Visual Arts: Madhubani Art</p>
             </div>
           </div>
@@ -341,28 +362,33 @@
         </div>
         <p class="has-text-centered">India</p>
       </div>
-      
+
       <div class="column is-one-quarter-desktop is-half-tablet">
         <div class="swiper" id="carousel-japan">
-          <div class="swiper-wrapper"> 
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./static/images/concept/japan/japan_bird_kounotori.jpg" alt="Japan Bird Kounotori">
+              <img src="./static/images/concept/japan/japan_bird_kounotori.jpg" 
+                   alt="Japan Bird Kounotori" class="carousel-image">
               <p class="has-text-centered">Bird: Kounotori</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/japan/japan_celebrations_koinobori.jpg" alt="Japan Celebrations Koinobori">
+              <img src="./static/images/concept/japan/japan_celebrations_koinobori.jpg" 
+                   alt="Japan Celebrations Koinobori" class="carousel-image">
               <p class="has-text-centered">Celebrations: Koinobori</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/japan/japan_clothing_hanten.jpg" alt="Japan Clothing Hanten">
+              <img src="./static/images/concept/japan/japan_clothing_hanten.jpg" 
+                   alt="Japan Clothing Hanten" class="carousel-image">
               <p class="has-text-centered">Clothing: Hanten</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/japan/japan_houses_kinkaku-ji.jpg" alt="Japan Houses Kinkaku-ji">
+              <img src="./static/images/concept/japan/japan_houses_kinkaku-ji.jpg" 
+                   alt="Japan Houses Kinkaku-ji" class="carousel-image">
               <p class="has-text-centered">Houses: Kinkaku-ji</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/japan/japan_utensil_mimikaki.jpg" alt="Japan Utensil Mimikaki">
+              <img src="./static/images/concept/japan/japan_utensil_mimikaki.jpg" 
+                   alt="Japan Utensil Mimikaki" class="carousel-image">
               <p class="has-text-centered">Utensil: Mimikaki</p>
             </div>
           </div>
@@ -376,23 +402,28 @@
         <div class="swiper" id="carousel-nigeria">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./static/images/concept/nigeria/nigeria_agriculture_fish-farming.jpg" alt="Nigeria Agriculture Fish Farming">
+              <img src="./static/images/concept/nigeria/nigeria_agriculture_fish-farming.jpg" 
+                   alt="Nigeria Agriculture Fish Farming" class="carousel-image">
               <p class="has-text-centered">Agriculture: Fish Farming</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/nigeria/nigeria_beverages_palm-wine.jpg" alt="Nigeria Beverages Palm Wine">
+              <img src="./static/images/concept/nigeria/nigeria_beverages_palm-wine.jpg" 
+                   alt="Nigeria Beverages Palm Wine" class="carousel-image">
               <p class="has-text-centered">Beverages: Palm Wine</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/nigeria/nigeria_celebrations_new-yam-festival.jpg" alt="Nigeria Celebrations New Yam Festival">
+              <img src="./static/images/concept/nigeria/nigeria_celebrations_new-yam-festival.jpg" 
+                   alt="Nigeria Celebrations New Yam Festival" class="carousel-image">
               <p class="has-text-centered">Celebrations: New Yam Festival</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/nigeria/nigeria_clothing_aso-oke.jpg" alt="Nigeria Clothing Aso-Oke">
+              <img src="./static/images/concept/nigeria/nigeria_clothing_aso-oke.jpg" 
+                   alt="Nigeria Clothing Aso-Oke" class="carousel-image">
               <p class="has-text-centered">Clothing: Aso-Oke</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/nigeria/nigeria_fruit_udala.jpg" alt="Nigeria Fruit Udala">
+              <img src="./static/images/concept/nigeria/nigeria_fruit_udala.jpg" 
+                   alt="Nigeria Fruit Udala" class="carousel-image">
               <p class="has-text-centered">Fruit: Udala</p>
             </div>
           </div>
@@ -400,29 +431,34 @@
           <div class="swiper-button-next"></div>
         </div>
         <p class="has-text-centered">Nigeria</p>
-      </div> 
- 
-      <div class="column is-one-quarter-desktop is-half-tablet"> 
+      </div>
+
+      <div class="column is-one-quarter-desktop is-half-tablet">
         <div class="swiper" id="carousel-portugal">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./static/images/concept/portugal/portugal_food_bacalhau-à-brás.jpg" alt="Portugal Food Bacalhau à Brás">
+              <img src="./static/images/concept/portugal/portugal_food_bacalhau-à-brás.jpg" 
+                   alt="Portugal Food Bacalhau à Brás" class="carousel-image">
               <p class="has-text-centered">Food: Bacalhau à Brás</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/portugal/portugal_mammal_porco.jpg" alt="Portugal Mammal Porco">
+              <img src="./static/images/concept/portugal/portugal_mammal_porco.jpg" 
+                   alt="Portugal Mammal Porco" class="carousel-image">
               <p class="has-text-centered">Mammal: Porco</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/portugal/portugal_utensil_black-pottery-of-bisalhães.jpg" alt="Portugal Utensil Black Pottery of Bisalhães">
+              <img src="./static/images/concept/portugal/portugal_utensil_black-pottery-of-bisalhães.jpg" 
+                   alt="Portugal Utensil Black Pottery of Bisalhães" class="carousel-image">
               <p class="has-text-centered">Utensil: Black Pottery of Bisalhães</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/portugal/portugal_vegetable_beterraba.jpg" alt="Portugal Vegetable Beterraba">
+              <img src="./static/images/concept/portugal/portugal_vegetable_beterraba.jpg" 
+                   alt="Portugal Vegetable Beterraba" class="carousel-image">
               <p class="has-text-centered">Vegetable: Beterraba</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/portugal/portugal_visual-arts_azulejo.jpg" alt="Portugal Visual Arts Azulejo">
+              <img src="./static/images/concept/portugal/portugal_visual-arts_azulejo.jpg" 
+                   alt="Portugal Visual Arts Azulejo" class="carousel-image">
               <p class="has-text-centered">Visual Arts: Azulejo</p>
             </div>
           </div>
@@ -432,27 +468,32 @@
         <p class="has-text-centered">Portugal</p>
       </div>
 
-      <div class="column is-one-quarter-desktop is-half-tablet"> 
+      <div class="column is-one-quarter-desktop is-half-tablet">
         <div class="swiper" id="carousel-turkey">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./static/images/concept/turkey/turkey_bird_mallard.jpg" alt="Turkey Bird Mallard">
+              <img src="./static/images/concept/turkey/turkey_bird_mallard.jpg" 
+                   alt="Turkey Bird Mallard" class="carousel-image">
               <p class="has-text-centered">Bird: Mallard</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/turkey/turkey_mammal_angora-goat.jpg" alt="Turkey Mammal Angora Goat">
+              <img src="./static/images/concept/turkey/turkey_mammal_angora-goat.jpg" 
+                   alt="Turkey Mammal Angora Goat" class="carousel-image">
               <p class="has-text-centered">Mammal: Angora Goat</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/turkey/turkey_music_baglama.jpg" alt="Turkey Music Bağlama">
+              <img src="./static/images/concept/turkey/turkey_music_baglama.jpg" 
+                   alt="Turkey Music Bağlama" class="carousel-image">
               <p class="has-text-centered">Music: Bağlama</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/turkey/turkey_utensil_cezve.jpg" alt="Turkey Utensil Cezve">
+              <img src="./static/images/concept/turkey/turkey_utensil_cezve.jpg" 
+                   alt="Turkey Utensil Cezve" class="carousel-image">
               <p class="has-text-centered">Utensil: Cezve</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/turkey/turkey_visual-arts_calligraphy.jpg" alt="Turkey Visual Arts Calligraphy">
+              <img src="./static/images/concept/turkey/turkey_visual-arts_calligraphy.jpg" 
+                   alt="Turkey Visual Arts Calligraphy" class="carousel-image">
               <p class="has-text-centered">Visual Arts: Calligraphy</p>
             </div>
           </div>
@@ -460,29 +501,34 @@
           <div class="swiper-button-next"></div>
         </div>
         <p class="has-text-centered">Turkey</p>
-      </div> 
+      </div>
 
-      <div class="column is-one-quarter-desktop is-half-tablet"> 
+      <div class="column is-one-quarter-desktop is-half-tablet">
         <div class="swiper" id="carousel-unitedstates">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./static/images/concept/united-states/united_states_celebrations_halloween.jpg" alt="United States Celebrations Halloween">
+              <img src="./static/images/concept/united-states/united_states_celebrations_halloween.jpg" 
+                   alt="United States Celebrations Halloween" class="carousel-image">
               <p class="has-text-centered">Celebrations: Halloween</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/united-states/united_states_music_bluegrass.jpg" alt="United States Music Bluegrass">
+              <img src="./static/images/concept/united-states/united_states_music_bluegrass.jpg" 
+                   alt="United States Music Bluegrass" class="carousel-image">
               <p class="has-text-centered">Music: Bluegrass</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/united-states/united_states_flower_lilium.jpg" alt="United States Flower Lilium">
+              <img src="./static/images/concept/united-states/united_states_flower_lilium.jpg" 
+                   alt="United States Flower Lilium" class="carousel-image">
               <p class="has-text-centered">Flower: Lilium</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/united-states/united_states_houses_california-bungalow.jpg" alt="United States Houses California Bungalow">
+              <img src="./static/images/concept/united-states/united_states_houses_california-bungalow.jpg" 
+                   alt="United States Houses California Bungalow" class="carousel-image">
               <p class="has-text-centered">Houses: Bungalow</p>
             </div>
             <div class="swiper-slide">
-              <img src="./static/images/concept/united-states/united_states_vegetable_kale.jpg" alt="United States Vegetable Kale">
+              <img src="./static/images/concept/united-states/united_states_vegetable_kale.jpg" 
+                   alt="United States Vegetable Kale" class="carousel-image">
               <p class="has-text-centered">Vegetable: Kale</p>
             </div>
           </div>
@@ -491,7 +537,7 @@
         </div>
         <p class="has-text-centered">United States</p>
       </div>
-      
+
     </div> 
   </div>
 </section>
