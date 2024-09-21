@@ -43,92 +43,69 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <style>
-    .carousel {
-      overflow: hidden; /* Ensure other images are hidden */
-      position: relative;
-    }
-  
-    .carousel-item {
-      position: absolute; /* Position the items absolutely */
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      z-index: 0; /* Default z-index */
-    }
-  
-    .carousel-item.active {
-      opacity: 1;
-      z-index: 1; /* Set the active item to have a higher z-index */
-    }
-    .carousel img {
-      width: 100%;
-      height: 300px; /* Standardized height for all images */
-      object-fit: cover; /* Ensure image fits the container without distortion */
-    }
-  
-    .columns {
-      margin-top: 20px;
-    }
-  </style>
-  
-  <script>
-    // Function to initialize the carousels
-    function initializeCarousel(carouselId) {
-      const carousel = document.querySelector(carouselId);
-      const items = carousel.querySelectorAll('.carousel-item');
-      let currentIndex = 0;
-  
-      function showItem(index) {
-        items.forEach((item, i) => {
-          item.classList.remove('active');
-          if (i === index) {
-            item.classList.add('active');
-          }
-        });
-      }
-  
-      showItem(currentIndex);
-    
-      // Add navigation buttons for manual control
-      const prevButton = document.createElement('button');
-      prevButton.textContent = 'Previous';
-      prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showItem(currentIndex);
-      });
+  <!--  Remove the entire <style> and <script> block related to the old carousel -->
 
-      const nextButton = document.createElement('button');
-      nextButton.textContent = 'Next';
-      nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % items.length;
-        showItem(currentIndex);
-      });
-
-      carousel.appendChild(prevButton);
-      carousel.appendChild(nextButton);
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      new Swiper('#carousel-brazil', { 
-          // Optional configuration parameters
-          loop: true, // Loop slides
-          navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-          },
-      });
-      initializeCarousel('#carousel-india');
-      initializeCarousel('#carousel-japan');
-      initializeCarousel('#carousel-nigeria');
-      initializeCarousel('#carousel-portugal');
-      initializeCarousel('#carousel-turkey');
-      initializeCarousel('#carousel-unitedstates');
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize each carousel using Swiper JS
+  
+    new Swiper('#carousel-brazil', { 
+      loop: true, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
-  </script> 
+  
+    new Swiper('#carousel-india', { 
+      loop: true, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  
+    new Swiper('#carousel-japan', { 
+      loop: true, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  
+    new Swiper('#carousel-nigeria', { 
+      loop: true, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  
+    new Swiper('#carousel-portugal', { 
+      loop: true, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  
+    new Swiper('#carousel-turkey', { 
+      loop: true, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  
+    new Swiper('#carousel-unitedstates', { 
+      loop: true, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+  </script>
 </head>
 <body>
 
