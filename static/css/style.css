@@ -92,3 +92,17 @@
 .teaser-img {
     width: 300px !important; 
 }
+
+/* Override Bulma's default section padding */
+#section {
+    padding: 1rem 1.5rem; /* Reduce top/bottom padding */
+}
+
+/* Increase font sizes within sections */
+#section h1, #section h2, #section h3, #section h4, #section h5, #section h6 {
+    font-size: 1.2em;  /* Increase heading font size by 20% */
+}
+
+#section p {
+    font-size: 1.1em; /* Increase paragraph font size by 10% */
+}
