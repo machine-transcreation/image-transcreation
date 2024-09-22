@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
+<script src="./static/js/file-paths.js"></script>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Expanding the scope of machine translation to images by proposing a new task of image transcreation.">
+  <meta name="description"
+    content="Expanding the scope of machine translation to images by proposing a new task of image transcreation.">
   <meta name="keywords" content="image transcreation, cultural relevance, machine translation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>An image speaks a thousand words but can everyone listen?
-  On image transcreation for cultural relevance.</title>
+    On image transcreation for cultural relevance.</title>
 
 
   <!-- Global site tag (gtag.js) - Google Analytics
@@ -23,19 +26,18 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link href="./static/css/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/star.svg">
-  
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -43,102 +45,28 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <!--  Remove the entire <style> and <script> block related to the old carousel -->
 
-  <style>
-    .carousel-image {
-      width: 100%;
-      height: auto;
-      display: block;
-      max-height: 300px; /* Adjust this value for your desired maximum height */
-      margin: 0 auto; 
-      object-fit: contain;
-    }
-  </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Initialize each carousel using Swiper JS
-  
-    new Swiper('#carousel-brazil', { 
-      loop: true, 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  
-    new Swiper('#carousel-india', { 
-      loop: true, 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  
-    new Swiper('#carousel-japan', { 
-      loop: true, 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  
-    new Swiper('#carousel-nigeria', { 
-      loop: true, 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  
-    new Swiper('#carousel-portugal', { 
-      loop: true, 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  
-    new Swiper('#carousel-turkey', { 
-      loop: true, 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  
-    new Swiper('#carousel-unitedstates', { 
-      loop: true, 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  });
-  </script>
 </head>
+
 <body>
 
-  <!-- initializeCarousel('#carousel-brazil'); -->
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://simran-khanuja.github.io/">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://simran-khanuja.github.io/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
 
-      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <!-- <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
         </a>
@@ -157,78 +85,77 @@
           </a>
         </div>
       </div> -->
+      </div>
+
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">An image speaks a thousand words but can everyone listen? On image transcreation for cultural relevance</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://simran-khanuja.github.io/">Simran Khanuja</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/sathyanarayanan-ramamoorthy/">Sathyanarayanan Ramamoorthy</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://yueqis.github.io/">Yueqi Song</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.phontron.com/">Graham Neubig</a><sup>1</sup>,
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Carnegie Mellon University</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2404.01247"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <h1 class="title is-1 publication-title">An image speaks a thousand words but can everyone listen? On image
+              transcreation for cultural relevance</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://simran-khanuja.github.io/">Simran Khanuja</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/sathyanarayanan-ramamoorthy/">Sathyanarayanan
+                  Ramamoorthy</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://yueqis.github.io/">Yueqi Song</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.phontron.com/">Graham Neubig</a><sup>1</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Carnegie Mellon University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2404.01247" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2404.01247"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://youtu.be/TuDu-n82Uus"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/simran-khanuja/image-transcreation"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+                    </span>
+                    <span>Paper</span>
                   </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2404.01247" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://youtu.be/TuDu-n82Uus" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/simran-khanuja/image-transcreation"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -236,45 +163,56 @@
                   </span>
                   <span>Data</span>
                   </a> -->
-            </div>
+              </div>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="applications">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/applications.png" alt="Applications of Image Transcreation" height="100%">
-      <h2 class="subtitle has-text-centered">
-        Different applications of image transcreation today.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Given the rise of multimedia content, human translators increasingly focus on culturally adapting not only words but also other modalities such as images to convey the same meaning. While several applications stand to benefit from this, machine translation systems remain confined to dealing with language in speech and text. In this work, we take a first step towards translating images to make them culturally relevant. First, we build three pipelines comprising state-of-the-art generative models to do the task. Next, we build a two-part evaluation dataset: i) concept: comprising 600 images that are cross-culturally coherent, focusing on a single concept per image, and ii) application: comprising 100 images curated from real-world applications. We conduct a multi-faceted human evaluation of translated images to assess for cultural relevance and meaning preservation. We find that as of today, image-editing models fail at this task, but can be improved by leveraging LLMs and retrievers in the loop. Best pipelines can only translate 5% of images for some countries in the easier concept dataset and no translation is successful for some countries in the application dataset, highlighting the challenging nature of the task. 
-          </p>
-        </div>
+  <section class="applications">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/applications.png" alt="Applications of Image Transcreation" height="100%">
+        <h2 class="subtitle has-text-centered">
+          Different applications of image transcreation today.
+        </h2>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </section>
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Given the rise of multimedia content, human translators increasingly focus on culturally adapting not only
+              words but also other modalities such as images to convey the same meaning. While several applications
+              stand to benefit from this, machine translation systems remain confined to dealing with language in speech
+              and text. In this work, we take a first step towards translating images to make them culturally relevant.
+              First, we build three pipelines comprising state-of-the-art generative models to do the task. Next, we
+              build a two-part evaluation dataset: i) concept: comprising 600 images that are cross-culturally coherent,
+              focusing on a single concept per image, and ii) application: comprising 100 images curated from real-world
+              applications. We conduct a multi-faceted human evaluation of translated images to assess for cultural
+              relevance and meaning preservation. We find that as of today, image-editing models fail at this task, but
+              can be improved by leveraging LLMs and retrievers in the loop. Best pipelines can only translate 5% of
+              images for some countries in the easier concept dataset and no translation is successful for some
+              countries in the application dataset, highlighting the challenging nature of the task.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -283,57 +221,298 @@
         </div>
       </div>
     </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
+      <!--/ Paper video. -->
+    </div>
+  </section>
 
-<section class="section" id="Evaluation Dataset"></section>
+  <section class="section" id="Evaluation Dataset"></section>
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered"> Evaluation Dataset</h2>
     <div class="content has-text-justified">
       <p>
-         In this paper we introduce a new task, that of <b>transcreating images</b>, to make them culturally relevant. For the machine learning community to make progress on this task, we curate a test set which is composed of two parts: <em>concept</em> (<a href="https://hub.zenoml.com/project/5416ea98-0c5b-42ef-8988-3deebbf86a50/Image%20Transcreation%20(Concept)">visualization link</a>) and <em>application</em> (<a href="https://hub.zenoml.com/project/aaa53662-6ee0-459a-b39f-4fdcf7aff8de/Image%20Transcreation%20(Application)">visualization link</a>), each containing 600 and 100 images respectively. The <em>concept</em> dataset is spread across 7 countries and 17 categories (shown below) and focuses on a single concept per image. The <em>application</em> dataset is curated from children's storybooks and math worksheets for grades 1-3.
+        In this paper we introduce a new task, that of <b>transcreating images</b>, to make them culturally relevant.
+        For the machine learning community to make progress on this task, we curate a test set which is composed of two
+        parts: <em>concept</em> (<a
+          href="https://hub.zenoml.com/project/5416ea98-0c5b-42ef-8988-3deebbf86a50/Image%20Transcreation%20(Concept)">visualization
+          link</a>) and <em>application</em> (<a
+          href="https://hub.zenoml.com/project/aaa53662-6ee0-459a-b39f-4fdcf7aff8de/Image%20Transcreation%20(Application)">visualization
+          link</a>), each containing 600 and 100 images respectively. The <em>concept</em> dataset is spread across 7
+        countries and 17 categories (shown below) and focuses on a single concept per image. The <em>application</em>
+        dataset is curated from children's storybooks and math worksheets for grades 1-3.
       </p>
     </div>
 
     <div class="hero-body"></div>
-      <img src="./static/images/dataset.png" alt="Dataset overview" height="100%">
-    </div>
+    <img src="./static/images/dataset.png" alt="Dataset overview" height="100%">
   </div>
-</section>
+  </div>
+  </section>
 
-<section class="section" id="Pipelines"></section>
+  <section class="section" id="Pipelines"></section>
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Pipelines</h2>
     <div class="content has-text-justified">
       <p>
-         We introduce three pipelines comprising state-of-the-art vision and language models to solve this task. The first pipeline uses an end-to-end image editing model, specifically, <a href="https://www.timothybrooks.com/instruct-pix2pix">InstructPix2Pix</a>, with the prompt, "Make this image culturally relevant to <em>X</em>", where <em>X</em> is one of the 7 countries above. The second pipeline captions the image using <a href="https://huggingface.co/Salesforce/instructblip-flan-t5-xxl">InstructBLIP</a>, edits the caption using GPT-3.5, and edits the image using <a href="https://pnp-diffusion.github.io/">Plug-and-Play</a> with GPT's output as the edit instruction. The third pipeline similarly captions the image and edits the caption, but retrieves a natural image from <a href="https://huggingface.co/datasets/mlfoundations/datacomp_1b">Datacomp-1b</a>, with GPT's output as the search query. An overview of all methods is given below:
+        We introduce three pipelines comprising state-of-the-art vision and language models to solve this task. The
+        first pipeline uses an end-to-end image editing model, specifically, <a
+          href="https://www.timothybrooks.com/instruct-pix2pix">InstructPix2Pix</a>, with the prompt, "Make this image
+        culturally relevant to <em>X</em>", where <em>X</em> is one of the 7 countries above. The second pipeline
+        captions the image using <a href="https://huggingface.co/Salesforce/instructblip-flan-t5-xxl">InstructBLIP</a>,
+        edits the caption using GPT-3.5, and edits the image using <a
+          href="https://pnp-diffusion.github.io/">Plug-and-Play</a> with GPT's output as the edit instruction. The third
+        pipeline similarly captions the image and edits the caption, but retrieves a natural image from <a
+          href="https://huggingface.co/datasets/mlfoundations/datacomp_1b">Datacomp-1b</a>, with GPT's output as the
+        search query. An overview of all methods is given below:
       </p>
     </div>
 
     <div class="hero-body"></div>
-      <img src="./static/images/pipelines.png" alt="Pipelines" height="100%">
-    </div>
+    <img src="./static/images/pipelines.png" alt="Pipelines" height="100%">
   </div>
-</section>
+  </div>
+  </section>
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{khanuja2024image,
+  <section class="section" id="Results"></section>
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        <b>Setup:</b> We transcreate all 700 images using the three pipelines, with each of the 7 countries as target.
+        We then conduct a human evaluation of outputs, to assess them across multiple dimensions (<a
+          href="https://docs.google.com/spreadsheets/d/1CpKaB-jqxIJaVRir3O3rHfMc5G5xXrKQ_nRUM_vxNGQ/edit?usp=sharing">template
+          of questions asked</a>).
+
+        <b>Criteria for successful transcreation:</b> We define a transcreation successful if the target image satisfies the following criteria:
+        <ol>
+          <li><em>Concept</em>: The target image belongs to the same semantic category as the source image (example, a food image is transcreated to a food image).</li>
+          <li><em>Application (Stories)</em>: The target image matches the text of the story.</li>
+          <li><em>Application (Worksheets)</em>: The target image can be used to teach the same concept as the source image (example, a worksheet for counting is transcreated to another which also teaches counting).</li>
+          <li><em>All</em>:The cultural relevance score of the target image is greater than that of the source image.</li>
+        </ol>
+      </p>
+    </div>
+    <div class="hero-body"></div>
+    <img src="./static/images/results.png" alt="Results" height="100%">
+    <p>Visualizations of all results can be found <a href="https://github.com/simran-khanuja/image-transcreation?tab=readme-ov-file#model-outputs-per-pipeline">here</a>. A few examples are shown below: </p>
+  </div>
+  </div>
+  </section>
+
+  &nbsp;
+
+  <div class="container">
+    <table width="1000" border="0" align="center">
+      <tbody>
+        <tr>
+          <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+              <!-- Dessert -->
+              <div class="carousel-item active">
+                <div>
+                  <img class="teaser-img" src="./static/images/results/dessert.jpg" />
+                  <span style="font-size: 150%;">→</span>
+                  <img id="dessert-result" class="teaser-img"
+                    src="./static/images/results/dessert/e2e.jpg" /> 
+                </div>
+                <br />
+                <div>
+                  <div
+                    onclick="toggle_prompt('dessert-e2e', ['dessert-cap-edit', 'dessert-cap-retrieve'], 'dessert-result')"
+                    class="caption caption-active" id="dessert-e2e">"e2e-instruct (target: india)"</div>
+                  <br />
+                  <div
+                    onclick="toggle_prompt('dessert-cap-edit', ['dessert-e2e', 'dessert-cap-retrieve'], 'dessert-result')"
+                    class="caption" id="dessert-cap-edit">"cap-edit (target: india)"</div>
+                  <br />
+                  <div
+                    onclick="toggle_prompt('dessert-cap-retrieve', ['dessert-e2e', 'dessert-cap-edit'], 'dessert-result')"
+                    class="caption" id="dessert-cap-retrieve">"cap-retrieve (target: india)"</div>
+                </div>
+              </div>
+
+              <!-- Cotton -->
+              <div class="carousel-item">
+                <div>
+                  <img class="teaser-img" src="./static/images/results/cotton.jpg" />
+                  <span style="font-size: 150%;">→</span>
+                  <img id="cotton-result" class="teaser-img"
+                    src="./static/images/results/cotton/e2e.jpg" />
+                </div>
+                <br />
+                <div>
+                  <div
+                    onclick="toggle_prompt('cotton-e2e', ['cotton-cap-edit', 'cotton-cap-retrieve'], 'cotton-result')"
+                    class="caption caption-active" id="cotton-e2e">"e2e-instruct (target: japan)"</div>
+                  <br />
+                  <div
+                    onclick="toggle_prompt('cotton-cap-edit', ['cotton-e2e', 'cotton-cap-retrieve'], 'cotton-result')"
+                    class="caption" id="cotton-cap-edit">"cap-edit (target: japan)"</div>
+                  <br />
+                  <div
+                    onclick="toggle_prompt('cotton-cap-retrieve', ['cotton-e2e', 'cotton-cap-edit'], 'cotton-result')"
+                    class="caption" id="cotton-cap-retrieve">"cap-retrieve (target: japan)"</div>
+                </div>
+              </div>
+
+              <!-- Burger -->
+              <div class="carousel-item">
+                <div>
+                  <img class="teaser-img" src="./static/images/results/burger.jpg" />
+                  <span style="font-size: 150%;">→</span>
+                  <img id="burger-result" class="teaser-img"
+                    src="./static/images/results/burger/e2e.jpg" />
+                </div>
+                <br />
+                <div>
+                  <div onclick="toggle_prompt('burger-e2e', ['burger-cap-edit', 'burger-cap-retrieve'], 'burger-result')"
+                    class="caption caption-active" id="burger-e2e">"e2e-instruct (target: united-states)"</div>
+                  <br />
+                  <div onclick="toggle_prompt('burger-cap-edit', ['burger-e2e', 'burger-cap-retrieve'], 'burger-result')"
+                    class="caption" id="burger-cap-edit">"cap-edit (target: united-states)"</div>
+                  <br />
+                  <div onclick="toggle_prompt('burger-cap-retrieve', ['burger-e2e', 'burger-cap-edit'], 'burger-result')"
+                    class="caption" id="burger-cap-retrieve">"cap-retrieve (target: united-states)"</div>
+                </div>
+              </div>
+
+              <!-- Ramen -->
+              <div class="carousel-item">
+                <div>
+                  <img class="teaser-img" src="./static/images/results/ramen.jpg" />
+                  <span style="font-size: 150%;">→</span>
+                  <img id="ramen-result" class="teaser-img"
+                    src="./static/images/results/ramen/e2e.jpg" />
+                </div>
+                <br />
+                <div>
+                  <div onclick="toggle_prompt('ramen-e2e', ['ramen-cap-edit', 'ramen-cap-retrieve'], 'ramen-result')"
+                    class="caption caption-active" id="ramen-e2e">"e2e-instruct (target: brazil)"</div>
+                  <br />
+                  <div onclick="toggle_prompt('ramen-cap-edit', ['ramen-e2e', 'ramen-cap-retrieve'], 'ramen-result')"
+                    class="caption" id="ramen-cap-edit">"cap-edit (target: brazil)"</div>
+                  <br />
+                  <div onclick="toggle_prompt('ramen-cap-retrieve', ['ramen-e2e', 'ramen-cap-edit'], 'ramen-result')"
+                    class="caption" id="ramen-cap-retrieve">"cap-retrieve (target: brazil)"</div>
+                </div>
+              </div>
+
+              <!-- Coke -->
+              <div class="carousel-item">
+                <div>
+                  <img class="teaser-img" src="./static/images/results/coke.jpg" />
+                  <span style="font-size: 150%;">→</span>
+                  <img id="coke-result" class="teaser-img" src="./static/images/results/coke/e2e.jpg" />
+                </div>
+                <br />
+                <div>
+                  <div
+                    onclick="toggle_prompt('coke-e2e', ['coke-cap-edit', 'coke-cap-retrieve'], 'coke-result')"
+                    class="caption caption-active" id="coke-e2e">"e2e-instruct (target: turkey)"</div>
+                  <br />
+                  <div
+                    onclick="toggle_prompt('coke-cap-edit', ['coke-e2e', 'coke-cap-retrieve'], 'coke-result')"
+                    class="caption" id="coke-cap-edit">"cap-edit (target: turkey)"</div>
+                  <br />
+                  <div
+                    onclick="toggle_prompt('coke-cap-retrieve', ['coke-e2e', 'coke-cap-edit'], 'coke-result')"
+                    class="caption" id="coke-cap-retrieve">"cap-retrieve (target: turkey)"</div>
+                </div>
+              </div>
+
+              <!-- Currency -->
+              <div class="carousel-item">
+                <div>
+                  <img class="teaser-img" src="./static/images/results/currency.jpg" />
+                  <span style="font-size: 150%;">→</span>
+                  <img id="currency-result" class="teaser-img" src="./static/images/results/currency/e2e.jpg" />
+                </div>
+                <br />
+                <div>
+                  <div
+                    onclick="toggle_prompt('currency-e2e', ['currency-cap-edit', 'currency-cap-retrieve'], 'currency-result')"
+                    class="caption caption-active" id="currency-e2e">"e2e-instruct (target: nigeria)"</div>
+                  <br />
+                  <div
+                    onclick="toggle_prompt('currency-cap-edit', ['currency-e2e', 'currency-cap-retrieve'], 'currency-result')"
+                    class="caption" id="currency-cap-edit">"cap-edit (target: nigeria)"</div>
+                  <br />
+                  <div
+                    onclick="toggle_prompt('currency-cap-retrieve', ['currency-e2e', 'currency-cap-edit'], 'currency-result')"
+                    class="caption" id="currency-cap-retrieve">"cap-retrieve (target: nigeria)"</div>
+                </div>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+              <div class="slider-navigation-previous">
+                <svg viewBox="0 0 50 80" xml:space="preserve">
+                  <polyline fill="white" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round"
+                    points="45.63,75.8 0.375,38.087 45.63,0.375 ">
+                  </polyline>
+                </svg>
+              </div>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+              <div class="slider-navigation-next">
+                <svg viewBox="0 0 50 80" xml:space="preserve">
+                  <polyline fill="white" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round"
+                    points="0.375,0.375 45.63,38.087 0.375,75.8 ">
+                  </polyline>
+                </svg>
+              </div>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </tr>
+        <tr> <br /> </tr>
+      </tbody>
+    </table>
+  </div>
+  <script>
+    function prompt_on(prompt_element) {
+        prompt_element.classList.add("caption-active");
+    }
+
+    function prompt_off(prompt_element) {
+        prompt_element.classList.remove("caption-active");
+    }
+
+    function toggle_prompt(active_prompt_id, inactive_prompt_ids, result_id) {
+        let active_prompt = document.getElementById(active_prompt_id);
+        prompt_on(active_prompt);
+        for (let i = 0; i < inactive_prompt_ids.length; i++) {
+            let inactive_prompt = document.getElementById(inactive_prompt_ids[i]);
+            prompt_off(inactive_prompt);
+        }
+
+        let result = document.getElementById(result_id);
+        result.src = file_paths[active_prompt_id];
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{khanuja2024image,
               author  = {Khanuja, Simran and Ramamoorthy, Sathyanarayanan and Song, Yueqi and Neubig, Graham},
               title   = {An image speaks a thousand words, but can everyone listen? On translating images for cultural relevance},
               journal = {arXiv pre-print},
               year    = {2024},
               url     = {https://arxiv.org/pdf/2404.01247}
             }</code></pre>
-  </div>
-</section>
-<br>
-<center class="is-size-10">
-  The website design was adapted from <a href="https://nerfies.github.io" class="external-link"><span
+      </div>
+    </section>
+    <br>
+    <center class="is-size-10">
+      The website design was adapted from <a href="https://nerfies.github.io" class="external-link"><span
           class="dnerf">Nerfies</span></a>.
-</center>
-<br>
+    </center>
+    <br>
 </body>
+
 </html>

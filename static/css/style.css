@@ -1,0 +1,94 @@
+/* CSS relevant to the carousel and image display */
+.container {
+    width: 1000px;
+    margin: 0 auto; 
+    text-align: left; 
+    color: #000;
+    background: #fff;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+}
+
+.carousel-control-prev {
+    margin-left: -50px;
+    height: 300px;
+}
+.carousel-control-next {
+    margin-right: -50px;
+    height: 300px;
+}
+.carousel-item {
+    overflow: hidden;
+    text-align: center;
+}
+.carousel-item img {
+    /* width: 100%; */
+}
+.carousel-inner .item img {
+    margin:auto;
+}
+.carousel-control-next,.carousel-control-prev{
+    opacity:1
+}
+.carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{
+    opacity:1
+}
+.slider-navigation-next,.slider-navigation-previous{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    width:42px;
+    height:42px;
+    background:gray center center no-repeat;
+    background-size:20px 20px;
+    border:1px solid #fff;
+    border-radius:25091983px;
+    box-shadow:0 2px 5px #3232321a;
+    top:50%;
+    margin-top:-20px;
+    left:0;
+    cursor:pointer;
+    transition:transform .3s,opacity .3s,-webkit-transform .3s
+}
+.slider-navigation-next svg,.slider-navigation-previous svg{
+    width:25%;
+    background:gray
+}
+.slider-navigation-next{
+    left:auto;
+    right:0;
+    background:gray center center no-repeat;
+    background-size:20px 20px
+}
+
+.teaser-carousel {
+    width: 670px;
+    margin: auto;
+    height: 400px;
+}
+
+.caption {
+    font-family: Chalkduster;
+    color: gray;
+    width: auto;
+    display: inline-block;
+    padding: 11px 15px 11px 15px;
+    border-radius: 10px;
+}
+
+.caption:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.caption-active {
+    color: black;
+    background-color: #F2E34C;
+}
+
+.teaser-img {
+    width: 300px !important; 
+}
