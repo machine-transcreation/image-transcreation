@@ -266,10 +266,12 @@
           href="https://pnp-diffusion.github.io/">Plug-and-Play</a> with GPT's output as the edit instruction. The third
         pipeline similarly captions the image and edits the caption, but retrieves a natural image from <a
           href="https://huggingface.co/datasets/mlfoundations/datacomp_1b">Datacomp-1b</a>, with GPT's output as the
-        search query. An overview of all methods is given below:
+        search query. <br> <br> 
+        
+        <b>*Update*</b>: Recently, we also experimented with generating a new image given the LLM-edited caption. An overview of all pipelines is given below:
       </p>
       <div class="image-container">
-      <img src="./static/images/pipelines.png" alt="Pipelines" height="100%">
+      <img src="./static/images/pipeline.svg" alt="Pipelines" height="100%">
     </div>
     </div>
     
@@ -285,14 +287,16 @@
         <b>Setup:</b> We transcreate all 700 images using the three pipelines, with each of the 7 countries as target.
         We then conduct a human evaluation of outputs, to assess them across multiple dimensions (<a
           href="https://docs.google.com/spreadsheets/d/1CpKaB-jqxIJaVRir3O3rHfMc5G5xXrKQ_nRUM_vxNGQ/edit?usp=sharing">template
-          of questions asked</a>).
+          of questions asked</a>). 
+        
+        <br>
 
         <b>Criteria for successful transcreation:</b> We define a transcreation successful if the target image satisfies the following criteria:
         <ol>
-          <li><em>Concept</em> : The target image belongs to the same semantic category as the source image (example, a food image is transcreated to a food image).</li>
-          <li><em>Application (Stories)</em> : The target image matches the text of the story.</li>
-          <li><em>Application (Worksheets)</em> : The target image can be used to teach the same concept as the source image (example, a worksheet for counting is transcreated to another which also teaches counting).</li>
-          <li><em>All</em> :The cultural relevance score of the target image is greater than that of the source image.</li>
+          <li><em>Concept</em>: The target image belongs to the same semantic category as the source image (example, a food image is transcreated to a food image).</li>
+          <li><em>Application (Stories)</em>: The target image matches the text of the story.</li>
+          <li><em>Application (Worksheets)</em>: The target image can be used to teach the same concept as the source image (example, a worksheet for counting is transcreated to another which also teaches counting).</li>
+          <li><em>All</em>: The cultural relevance score of the target image is greater than that of the source image.</li>
         </ol>
       </p>
       <div class="image-container">
